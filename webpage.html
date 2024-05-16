@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1 class="text">Vote for Your Favorite Option</h1>
+        <form id="voteForm">
+            <div class="option">
+                <input type="radio" id="option1" name="vote" value="Option 1">
+                <label for="option1">Option 1</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option2" name="vote" value="Option 2">
+                <label for="option2">Option 2</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option3" name="vote" value="Option 3">
+                <label for="option3">Option 3</label>
+            </div>
+            <button type="submit">Vote</button>
+        </form>
+        <div id="confirmationMessage"></div>
+    </div>
+</body>
+<style>
+    .container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    
+}
+.text{
+    margin-top: 100px;
+    font-size: 50px;
+}
+   
+
+.option {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#confirmationMessage {
+    margin-top: 20px;
+    font-size: 18px;
+}
+body {
+    background-image: url('voting.jpg');
+    background-position: inherit;
+    background-size: 1000px; /* Adjust this value as needed */
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    padding-left: 50px;
+}
+
+</style>
+</html>
